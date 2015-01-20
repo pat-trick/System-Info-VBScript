@@ -7,7 +7,7 @@ Polls system information from Windows Dell computers and inserts it into a remot
 * History:
   * 1.0 Original release
   * 1.1 Added System Tag information, changed SQL query to update duplicate keys, changed SQL table to use SystemTag as primary key
-	* 1.2 Cleaned up and migrated to GitHub
+  * 1.2 Cleaned up and migrated to GitHub
 
 ## Overview
 
@@ -24,12 +24,12 @@ Visual Basic script to query the following parameters on a Dell Windows computer
 
 Directly writes to a MySQL database to the table <table_name> using the following query:
 
-INSERT INTO <table_name> (ComputerName, ComputerModel, MemorySize1, MemorySpeed1, MemorySize2,
+`INSERT INTO <table_name> (ComputerName, ComputerModel, MemorySize1, MemorySpeed1, MemorySize2,
       MemorySpeed2, TotalMemory) VALUES ('ComputerName', 'ComputerModel', 'MemorySize1', 'MemorySpeed1',
       'MemorySize2', 'MemorySpeed2', 'TotalMemory')
 ON DUPLICATE KEY UPDATE ComputerName ='ComputerName', ComputerModel = 'ComputerModel',
       MemorySize1 = 'MemorySize1', MemorySpeed1 = 'MemorySpeed1', MemorySize2 = 'MemorySize2',
-      MemorySpeed2 = 'MemorySpeed2', TotalMemory = 'TotalMemory';
+      MemorySpeed2 = 'MemorySpeed2', TotalMemory = 'TotalMemory';`
 
 This script may be expanded upon in future iterations to query systems for
 additional hardware information as necessary.
