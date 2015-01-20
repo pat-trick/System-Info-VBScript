@@ -52,6 +52,8 @@ Remotely accessible MySQL database with a table that has the following paramater
 * (int) MemorySpeed2
 * (int) TotalMemory
 
+Instructions on installing and configuring MySQL may be found at http://dev.mysql.com/doc/
+
 ## Notes: 
 
 All items in <> should be substituted with actual values, such as database info, passwords, etc.
